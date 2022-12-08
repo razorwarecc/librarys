@@ -1,9 +1,3 @@
---[[------------------------------------------------
-|
-|    ESP Library Made for 1NF1N17Y (cookiesservices.xyz)
-|    
---]]------------------------------------------------
-
 -- Services
 local Workspace = game:GetService("Workspace")
 local Camera = Workspace.CurrentCamera
