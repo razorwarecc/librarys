@@ -1,0 +1,230 @@
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+function tween(inst, timetotween, property, value)
+	local tweenInfo = TweenInfo.new(timetotween)
+	local properties = {}
+	properties[property] = value
+	game:GetService("TweenService"):Create(inst, tweenInfo, properties):Play()
+end
+-- Instances
+
+local ScreenGui = Instance.new("ScreenGui")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local info = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UIPadding = Instance.new("UIPadding")
+local body = Instance.new("TextLabel")
+local UIPadding_2 = Instance.new("UIPadding")
+local warning = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIPadding_3 = Instance.new("UIPadding")
+local body_2 = Instance.new("TextLabel")
+local UIPadding_4 = Instance.new("UIPadding")
+local uistroke = Instance.new("UIStroke")
+local uistroke_2 = Instance.new("UIStroke")
+-- Properties
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ScrollingFrame.Parent = ScreenGui
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+ScrollingFrame.BackgroundTransparency = 1
+ScrollingFrame.BorderColor3 = Color3.new(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0293757655, 0, 0.0319634713, 0)
+ScrollingFrame.Size = UDim2.new(0, 351, 0, 345)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 5)
+
+info.Name = "info"
+info.Parent = ScreenGui
+info.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+info.BackgroundTransparency = 1
+info.BorderColor3 = Color3.new(0, 0, 0)
+info.BorderSizePixel = 0
+info.Position = UDim2.new(0.0293757655, 0, 0.0319634713, 0)
+info.Size = UDim2.new(0, 351, 0, 29)
+info.Visible = false
+
+uistroke.Parent = info
+uistroke.Color = Color3.fromRGB(255, 0, 255)
+uistroke.Transparency = 1
+uistroke.Enabled = true
+
+UICorner.Parent = info
+UICorner.CornerRadius = UDim.new(0, 3)
+
+TextLabel.Parent = info
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-5.43404166e-09, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 62, 0, 13)
+TextLabel.Font = Enum.Font.Code
+
+TextLabel.Text = "Info"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 13
+TextLabel.TextTransparency = 1
+
+UIPadding.Parent = TextLabel
+UIPadding.PaddingTop = UDim.new(0, 3)
+
+body.Name = "body"
+body.Parent = info
+body.BackgroundColor3 = Color3.new(1, 1, 1)
+body.BackgroundTransparency = 1
+body.BorderColor3 = Color3.new(0, 0, 0)
+body.BorderSizePixel = 0
+body.Position = UDim2.new(0.176638171, 0, 0, 0)
+body.Size = UDim2.new(0, 289, 0, 29)
+body.Font = Enum.Font.Code
+-- body.Font = Font.new(, Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+body.Text = "Body"
+body.TextColor3 = Color3.new(1, 1, 1)
+body.TextSize = 13
+body.TextTransparency = 1
+body.TextWrapped = true
+body.TextXAlignment = Enum.TextXAlignment.Left
+body.TextYAlignment = Enum.TextYAlignment.Top
+
+UIPadding_2.Parent = body
+UIPadding_2.PaddingTop = UDim.new(0, 3)
+
+warning.Name = "warning"
+warning.Parent = ScreenGui
+warning.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+warning.BackgroundTransparency = 1
+warning.BorderColor3 = Color3.new(0, 0, 0)
+warning.BorderSizePixel = 0
+warning.Position = UDim2.new(0.0293757655, 0, 0.0319634713, 0)
+warning.Size = UDim2.new(0, 351, 0, 29)
+warning.Visible = false
+
+uistroke_2.Parent = info
+uistroke_2.Color = Color3.fromRGB(255, 0, 255)
+uistroke_2.Transparency = 1
+uistroke_2.Enabled = true
+
+UICorner_2.Parent = warning
+UICorner_2.CornerRadius = UDim.new(0, 3)
+
+TextLabel_2.Parent = warning
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-5.43404166e-09, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 62, 0, 13)
+TextLabel_2.Font = Enum.Font.Code
+TextLabel_2.Text = "Warning"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 0)
+TextLabel_2.TextSize = 13
+TextLabel_2.TextTransparency = 1
+
+UIPadding_3.Parent = TextLabel_2
+UIPadding_3.PaddingTop = UDim.new(0, 3)
+
+body_2.Name = "body"
+body_2.Parent = warning
+body_2.BackgroundColor3 = Color3.new(1, 1, 1)
+body_2.BackgroundTransparency = 1
+body_2.BorderColor3 = Color3.new(0, 0, 0)
+body_2.BorderSizePixel = 0
+body_2.Position = UDim2.new(0.176638171, 0, 0, 0)
+body_2.Size = UDim2.new(0, 289, 0, 29)
+body_2.Font = Enum.Font.Code
+body_2.Text = "Body"
+body_2.TextColor3 = Color3.new(1, 1, 1)
+body_2.TextSize = 13
+body_2.TextTransparency = 1
+body_2.TextWrapped = true
+body_2.TextXAlignment = Enum.TextXAlignment.Left
+body_2.TextYAlignment = Enum.TextYAlignment.Top
+
+UIPadding_4.Parent = body_2
+UIPadding_4.PaddingTop = UDim.new(0, 3)
+local notification = {}
+notification.new = function(ntype, body, duration)
+	if string.lower(ntype) == "info" then
+		local template = info:Clone()
+		template.Parent = ScrollingFrame
+		template.Visible = true
+		template.body.Text = body
+		tween(template, 0.15, "BackgroundTransparency", 0)
+		for i, v in pairs(template:GetChildren()) do
+			if v:IsA("TextLabel") then
+				tween(v, 0.15, "TextTransparency", 0)
+				tween(v, 0.15, "TextStrokeTransparency", 0)	
+			end
+			if v:IsA("UIStroke") then
+				tween(v, 0.15, "Transparency", 0)
+			end
+		end
+
+		delay(duration, function()
+			tween(template, 0.15, "BackgroundTransparency", 1)
+			for i, v in pairs(template:GetChildren()) do
+				if v:IsA("TextLabel") then
+					tween(v, 0.15, "TextTransparency", 1)
+					tween(v, 0.15, "TextStrokeTransparency", 1)	
+				end
+				if v:IsA("UIStroke") then
+					tween(v, 0.15, "Transparency", 1)
+				end
+			end
+			delay(0.15, function()
+				template:Destroy()
+			end)
+		end)
+
+	elseif string.lower(ntype) == "warning" then
+		local template = warning:Clone()
+		template.Parent = ScrollingFrame
+		template.Visible = true
+		template.body.Text = body
+		tween(template, 0.15, "BackgroundTransparency", 0)
+		for i, v in pairs(template:GetChildren()) do
+			if v:IsA("TextLabel") then
+				tween(v, 0.15, "TextTransparency", 0)
+				tween(v, 0.15, "TextStrokeTransparency", 0)	
+			end
+			if v:IsA("UIStroke") then
+				tween(v, 0.15, "Transparency", 0)
+			end
+		end
+
+		delay(duration, function()
+			tween(template, 0.15, "BackgroundTransparency", 1)
+			for i, v in pairs(template:GetChildren()) do
+				if v:IsA("TextLabel") then
+					tween(v, 0.15, "TextTransparency", 1)
+					tween(v, 0.15, "TextStrokeTransparency", 1)	
+				end
+				if v:IsA("UIStroke") then
+					tween(v, 0.15, "Transparency", 1)
+				end
+			end
+			delay(0.15, function()
+				template:Destroy()
+			end)
+		end)
+	end
+end
+
+return notification
