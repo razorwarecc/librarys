@@ -831,7 +831,7 @@ do
 			Outline.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 			Outline.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			Outline.Position = UDim2.new(0.5, 0, 0.5, 0)
-			Outline.Size = UDim2.new(0, 650, 0, 550)
+			Outline.Size = UDim2.new(0, 800, 0, 550)
 			Library.Holder = Outline
 			Outline.Text = ""
 			Outline.AutoButtonColor = false
