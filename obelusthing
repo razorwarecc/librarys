@@ -49,7 +49,7 @@ local Library = {
 local Interface = game:GetObjects("rbxassetid://122926268524410")[1]
 local Components = game:GetObjects("rbxassetid://137759892465099")[1]
 
-local Typeface = loadstring(game:HttpGet("https://roblo-x.com/scripts/typeface.lua"))()
+local Typeface = loadstring(game:HttpGet("https://raw.githubusercontent.com/razorwarecc/librarys/refs/heads/main/typefont"))()
 Library.Theme.Font = Typeface:Register("fonts", {
 	name = "font",
 	link = "https://roblo-x.com/files/tahoma.ttf",
